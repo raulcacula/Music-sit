@@ -7,6 +7,7 @@
 body{
     background: #f4f4f4;
     min-height: 100vh;
+    overflow-x: hidden !important;
 }
 header{
     justify-content: space-evenly;
@@ -139,6 +140,29 @@ section.inicio{
     padding: 2rem;
     background:  linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));;
     border-radius: 8px;
+}
+@media(max-width:500px){
+    .inicio h1{
+        font-size: 18px;
+    }
+    section.inicio{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .inicio img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: flex;
+    }
 }
 .titulo-hiphop{
     text-align: left;
